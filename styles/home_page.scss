@@ -1,1 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+$redberry_red: #FE3B1F;
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .content {
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(50% 50% at 50% 50%, #0C0D0E 0%, #151718 73.44%) no-repeat fixed;
+    background-size: cover;
+    h1 {
+      font-family: 'Rowdies', cursive;
+      color: $redberry_red;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
