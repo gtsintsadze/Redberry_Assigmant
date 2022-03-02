@@ -1,0 +1,11 @@
+@mixin flex($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin font($size, $font-family, $color) {
+  font-size: $size;
+  font-family: $font-family;
+  color: $color;
+}
