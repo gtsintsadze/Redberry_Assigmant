@@ -5,21 +5,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Personal Information</title>
 </head>
-<body class="personal-info">
+<body class="questionnaire">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="personal-info_content w-100">
-                <div class="personal-info_content_wrapper">
+            <div class="item-content questionnaire-content w-100">
+                <div class="item-content-wrapper">
                     <h2>
                         Hey, Rocketeer, what are your coordinates?
                     </h2>
 
-                    <div class="personal-info_inputs">
+                    <div class="item-inputs">
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Last Name">
                         <input type="email" placeholder="E Mail">
@@ -45,7 +45,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="redberry-origin_wrapper">
+                <div class="about-redberry-wrapper">
                     <h2>
                         Redberry Origins
                     </h2>
@@ -59,19 +59,61 @@
             </div>
         </div>
         <div class="carousel-item">
-            <h2>
-                Hey, Rocketeer, what are your coordinates?
-                <i class="fa fa-arrow"></i>
-            </h2>
-            <div class="personal-info_inputs">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="E Mail">
-                <input type="number" placeholder="+995 5__ ___ ___">
+            <div class="item-content technical-skills-content w-100">
+                <div class="item-content-wrapper">
+                    <h2>
+                        Tell us about your skills
+                    </h2>
+                    <div class="add-skills-wrapper">
+                        <div class="item-inputs">
+                            <div class="skill-select_box">
+                                <select class="skill-selector" name="Skills">
+                                    <option value="none" selected disabled hidden>Skills</option>
+                                    <option value="skill-1">Skill 1</option>
+                                    <option value="skill-2">Skill 2</option>
+                                    <option value="skill-3">Skill 3</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="Experience Duration in Years">
+                            <button class="add-programming-language">Add Programming Language</button>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <img src="../images/Previous.svg" alt="previous">
+                        </a>
+
+                        <ol class="carousel-indicator">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                class="progress-bar"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="progress-bar"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="progress-bar"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4" class="progress-bar"></li>
+
+                        </ol>
+                        <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <img src="../images/Next.svg" alt="next">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-redberry-wrapper">
+                    <h2>
+                        A bit about our battles
+                    </h2>
+                    <p>
+                        As we said, Redberry has been on the field for quite some time now, and we have touched and
+                        embraced a variety of programming languages, technologies, philosophies, and frameworks. We are
+                        battle-tested in PHP Laravel Stack with Vue.js, refined in React, and allies with Serverside
+                        technologies like Docker and Kubernetes, and now we have set foot in the web3 industry.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="carousel-item">
-        </div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
     </div>
 </div>
 
