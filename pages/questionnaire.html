@@ -85,7 +85,7 @@
 
                         <ol class="carousel-indicator">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                class="progress-bar"></li>
+                                class="progress-bar active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"
                                 class="progress-bar active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2" class="progress-bar"></li>
@@ -111,8 +111,187 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-item"></div>
-        <div class="carousel-item"></div>
+        <div class="carousel-item">
+            <div class="item-content covid-info-content w-100">
+                <div class="item-content-wrapper">
+                    <h2>
+                        Tell us about your skills
+                    </h2>
+                    <form class="covid-info-form">
+                        <div class="work-style-content">
+                            <p>how would you prefer to work?</p>
+                            <div>
+                                <input type="radio" id="sairme" name="work-style" value="sairme"
+                                       checked>
+                                <label for="sairme">From Sairme Office</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="from-home" name="work-style" value="from-home">
+                                <label for="from-home">From Home</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="hybrid" name="work-style" value="hybrid">
+                                <label for="hybrid">Hybrid</label>
+                            </div>
+                        </div>
+
+                        <div class="covid-status-content">
+                            <p>Did you contact covid 19? :(</p>
+                            <div>
+                                <input type="radio" id="covid-contact-positive" name="covid-contact-status"
+                                       value="covid-contact-positive"
+                                       checked>
+                                <label for="covid-contact-positive">Yes</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="covid-contact-negative" name="covid-contact-status"
+                                       value="covid-contact-negative">
+                                <label for="covid-contact-negative">No</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="start">When?</label>
+
+                            <input type="date" id="start" name="trip-start"
+                                   value="2018-07-22"
+                                   min="2018-01-01" max="2018-12-31">
+                        </div>
+
+                        <div class="covid-vaccinated-content">
+                            <p>Have you been vaccinated?</p>
+                            <div>
+                                <input type="radio" id="vaccinated" name="vaccinated" value="vaccinated"
+                                       checked>
+                                <label for="vaccinated">Yes</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="not-vaccinated" name="vaccinated" value="not-vaccinated">
+                                <label for="not-vaccinated">No</label>
+                            </div>
+
+                            <div>
+                                <label for="start">When did you get your last covid vaccine?</label>
+
+                                <input type="date" id="last-covid-vaccine" name="last-covid-vaccine"
+                                       value=""
+                                       min="2020-01-01" max="2022-7-1">
+                            </div>
+
+                        </div>
+                    </form>
+                    <div class="progress_bar">
+                        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <img src="../images/Previous.svg" alt="previous">
+                        </a>
+
+                        <ol class="carousel-indicator">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="progress-bar"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4" class="progress-bar"></li>
+
+                        </ol>
+                        <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <img src="../images/Next.svg" alt="next">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-redberry-wrapper">
+                    <h2>
+                        Redberry Covid Policies
+                    </h2>
+                    <p>
+                        As this infamous pandemic took over the world, we adjusted our working practices so that our
+                        employees can be as safe and comfortable as possible. We have a hybrid work environment, so you
+                        can either work from home or visit our lovely office on Sairme Street. If it was up to us, we
+                        would love you to see us in the office because we think face-to-face communications > Zoom
+                        meetings. Both on the fun and productivity scales.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="item-content redberry-insights-content w-100">
+                <div class="item-content-wrapper">
+                    <h2>
+                        What about you?
+                    </h2>
+                    <div>
+                        <p>Would you attend Devtalks and maybe also organize your own?</p>
+                        <input type="radio" id="devtalks-positive" name="devtalks" value="devtalks-positive"
+                               checked>
+                        <label for="devtalks-positive">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="devtalks-negative" name="devtalks" value="devtalks-negative">
+                        <label for="devtalks-negative">No</label>
+                    </div>
+
+                    <div>
+                        <p>What would you speak about at Devtalk?</p>
+                        <label for="devtalk-info"></label>
+
+                        <textarea id="devtalk-info" name="devtalk-info" rows="4" cols="50">
+                              I would...
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <p>Tell us something special</p>
+                        <label for="special-info"></label>
+
+                        <textarea id="special-info" name="devtalk-info" rows="4" cols="50">
+                              I would...
+                        </textarea>
+                    </div>
+
+                    <div class="progress_bar">
+                        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <img src="../images/Previous.svg" alt="previous">
+                        </a>
+
+                        <ol class="carousel-indicator">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"
+                                class="progress-bar active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4" class="progress-bar"></li>
+
+                        </ol>
+                        <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <img src="../images/Next.svg" alt="next">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-redberry-wrapper">
+                    <h2>
+                        Redberrian Insights
+                    </h2>
+                    <p>
+                        We were soo much fun before the pandemic started! Parties almost every weekend and lavish
+                        employee birthday celebrations! Unfortunately, covid ruined that fun like it did almost
+                        everything else in the world. But we try our best to zhuzh it up a bit. For example, we host
+                        biweekly Devtalks where our senior and lead developers talk about topics they are passionate
+                        about. Previous topics have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold these talks
+                        in the office but you can join our Zoom broadcast as well. Feel free to join either as an
+                        attendee or a speaker!
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="carousel-item"></div>
     </div>
 </div>
